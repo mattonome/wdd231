@@ -1,0 +1,259 @@
+/* small.css – Base styles for mobile-first design */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #18bc9c;
+  --light-color: #ecf0f1;
+  --dark-color: #34495e;
+  --font-family: 'Roboto', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+header {
+  position: relative;
+  display: flex;                
+  justify-content: center;      /* center image + text horizontally */
+  align-items: center;          /* center vertically */
+  gap: 1rem;                    
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  font-size: 20px;
+  text-align: left;
+}
+
+header img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10%;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-color);
+  padding: 0.5rem 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem;
+  display: block;
+  transition: background 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: var(--secondary-color);
+}
+
+main {
+  margin-top: 1rem;
+}
+
+h1, h2 {
+  color: var(--primary-color);
+}
+
+section {
+  background: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.resources{
+    grid-column: 1/2;
+    /* background-color: #505033; */
+    min-height: 400px;
+    padding: 0;
+    color: black;
+    margin-left: 2px;
+    border-radius: 8px;
+    overflow: hidden;
+
+}
+
+
+.res-text{
+    background-color: darkslategray;
+    color: white;
+    grid-column: 1/2;
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.resources ul{
+    padding: 40px;
+}
+
+.abj-text{
+    background-color: darkslategray;
+    color: white;
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+
+}
+
+.course{
+
+    grid-column: 2/3;
+    /* background-color: aquamarine; */
+    min-height: 400px;
+    padding: 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+
+.course figure {
+    margin: 0;             /* reset browser default */
+    padding: 12px;         /* spacing inside the border */
+    background: #f9f9f9;   /* optional container background */
+    border-radius: 8px;    /* optional rounded corners */
+  }
+  
+  .course figure img {
+    width: 327px;
+    height: auto;
+    display: block;
+  }
+  
+  .course figure figcaption {
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+  }
+
+
+  .course-work{
+    grid-column: 1/5;
+    background-color: white;
+    min-height: 400px;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 8px;
+    overflow: hidden;
+
+}
+    .course-work h2{
+        font-size: 18px;
+    }
+
+
+.course-work .course-wrk-text{
+    background-color: darkslategray;
+    color: white;
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+
+}
+
+.course-work .total-credit {
+    text-align: center;
+  }
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem 0;
+}
+
+.buttons button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+  background-color: var(--secondary-color);
+}
+
+.course-card {
+  background-color: #f9f9f9;
+  border: 1px solid var(--dark-color);
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.course-card.completed {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--primary-color);
+  color:white;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+
+
+/* Hamburger toggle button */
+ #menuToggle {
+    position: absolute;    /* remove from normal flow */
+    top: 0.5rem;           /* distance from header’s top */
+    right: 1rem;           /* distance from header’s right edge */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10;           /* sit above other header content */
+    padding: 10px;
+  }
+  
+  /* Hide menu by default on mobile */
+  nav ul {
+    display: none;
+  }
+  
+  /* Show menu when toggled open */
+  nav ul.open {
+    display: flex;
+    flex-direction: column;
+  } 
+   

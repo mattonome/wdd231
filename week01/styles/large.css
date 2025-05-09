@@ -1,0 +1,158 @@
+/* large.css – Overrides and layout for screens ≥ 768px */
+@media screen and (min-width: 768px) {
+    body {
+      padding: 2rem;
+    }
+  
+    header {
+      padding: 1.5rem 2rem;
+    }
+  
+    nav ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 110px
+      }
+  
+    main {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 2rem;
+    }
+
+    .hero-text{
+        grid-column: 1/2;
+        padding: 2px;
+        margin-left: 50px;
+
+    }
+
+    .res-text{
+        background-color: darkslategray;
+        color: white;
+        grid-column: 1/2;
+        width: 100%;
+        margin: 0;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .resources{
+        grid-column: 1/2;
+        /* background-color: #505033; */
+        min-height: 400px;
+        padding: 0;
+        color: black;
+        margin-left: 50px;
+        border-radius: 8px;
+        overflow: hidden;
+
+    }
+    .resources ul{
+        padding: 50px;
+    }
+
+    .abj-text{
+        background-color: darkslategray;
+        color: white;
+        width: 100%;
+        margin: 0;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .course{
+
+        grid-column: 2/3;
+        /* background-color: aquamarine; */
+        min-height: 400px;
+        padding: 0;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .course figure {
+        margin: 0;             /* reset browser default */
+        padding: 20px;         /* spacing inside the border */
+        background: #f9f9f9;   /* optional container background */
+        border-radius: 8px;    /* optional rounded corners */
+      }
+      
+      .course figure img {
+        width: 327px;
+        height: auto;
+        display: block;
+      }
+      
+      .course figure figcaption {
+        margin-top: 0.5rem;
+        text-align: center;
+        font-size: 0.9rem;
+        color: #666;
+      }
+      
+
+
+    .course-work{
+        grid-column: 1/5;
+        background-color: white;
+        min-height: 400px;
+        padding: 0;
+        margin-left: 50px;
+        margin-right: 50px;
+        border-radius: 8px;
+        overflow: hidden;
+
+    }
+
+    .course-work .course-wrk-text{
+        background-color: darkslategray;
+        color: white;
+        width: 100%;
+        margin: 0;
+        padding: 5px;
+        text-align: center;
+
+    }
+
+    .course-work .total-credit {
+        text-align: center;
+      }
+      
+
+  
+    section {
+      margin-bottom: 2rem;
+    }
+   
+  
+    .buttons {
+        display: grid;                          /* use CSS Grid for the buttons container */
+        grid-template-columns: repeat(3, auto); /* create 3 columns sized to their content */
+        justify-content: center;                /* center the whole grid within its parent */
+        gap: 1rem;                              /* space between each button */
+      }
+      
+  
+    .course-card {
+      max-width: 500px;
+      margin: 0 auto 1rem;
+    }
+  
+    footer {
+      padding: 2rem;
+      color:white;
+
+    
+    }
+
+    #courseContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        padding: 20px;
+      }
+    }
+  
+  
