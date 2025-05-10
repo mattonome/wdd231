@@ -1,5 +1,9 @@
 /* large.css – Overrides and layout for screens ≥ 768px */
 @media screen and (min-width: 768px) {
+    /* 1. Hide the hamburger on large screens */
+    #menuToggle {
+    display: none; /* removes the button from layout and painting */ 
+    } /* :contentReference[oaicite:0]{index=0} */
     body {
       padding: 2rem;
     }
