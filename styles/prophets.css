@@ -1,0 +1,88 @@
+/* Reset and Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color:grey;
+    color: #333;
+    width: 100%;
+  }
+  
+  /* Header and Footer */
+  header,
+  footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+  }
+  
+  /* Main Container and Cards Grid */
+  main {
+    width: 100%;
+  }
+  
+  #cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+    gap: 1.5rem;
+    padding: 2rem;
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  /* Card Styles */
+  #cards section {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  #cards section:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Images */
+  #cards img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 1rem;
+  }
+  
+  /* Headings and Text */
+  h1 {
+    margin: 0;
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+  
+  p {
+    margin: 0.25rem 0;
+    font-size: 0.95rem;
+  }
+  
+  /* Responsive Grid */
+  @media (max-width: 1024px) {
+    #cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    #cards {
+      grid-template-columns: 1fr;
+    }
+  }
+  

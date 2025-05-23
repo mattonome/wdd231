@@ -1,0 +1,46 @@
+[
+    {
+      "name": "Alpha Consulting",
+      "address": "123 Main St, Your City",
+      "phone": "(555) 111-2222",
+      "website": "https://alphaconsulting.com",
+      "image": "alphaconsulting.png",
+      "membershipLevel": 3,
+      "description": "Expert business consulting services.",
+      "intro": "Alpha Consulting specializes in strategic business solutions for modern enterprises."
+    },
+    {
+      "name": "Beta Bakery",
+      "address": "456 Baker St, Your City",
+      "phone": "<b>PHONE: </b>(555) 333-4444",
+      "website": "https://betabakery.com",
+      "image": "betabakery.png",
+      "membershipLevel": 2,
+      "description": "Fresh baked goods daily.",
+      "intro": "Beta Bakery brings the sweet smell of freshly baked delights to your neighborhood."
+    },
+    {
+      "name": "Gamma Tech",
+      "address": "789 Tech Ave, Innovation City",
+      "phone": "(555) 555-5555",
+      "website": "https://gammatech.com",
+      "image": "gammatech.png",
+      "membershipLevel": 1,
+      "description": "Cutting-edge technology solutions.",
+      "intro": "Gamma Tech pioneers the latest advancements in software development."
+        
+    },
+    {
+      "name": "Gamma Tech",
+      "address": "789 Tech Ave, Innovation City",
+      "phone": "(555) 555-5555",
+      "website": "https://gammatech.com",
+      "image": "gammatech.png",
+      "membershipLevel": 1,
+      "description": "Cutting-edge technology solutions.",
+      "intro": "Gamma Tech pioneers the latest advancements in software development."
+        
+        
+    }
+  ]
+  

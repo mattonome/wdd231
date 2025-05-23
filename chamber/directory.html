@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="This is the Home Page for BYU Course tilttle WDD 231" />
+  <meta name="author" content="Akhabue Onome Matthew" />
+  <meta property="og:title" content="Facebook">
+  <meta property="og:description" content="Discover the other online activities with carryout which includes; advertisiment, campaigns, CSRs and advisory roles.">
+  <meta property="og:url" content="https://www.facebook.com/">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="https://www.apple.com/ac/structured-data/images/open_graph_logo.png?202110180743" />
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Apple">
+  <title>Course Home Page</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/directory.css">
+  <script src="scripts/directory.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <section class="header">
+      <nav>
+        <a href="">
+          <img src="./images/ohio.png" alt="Logo">
+          <div class="maitama-1">
+            <p class="maitama">Maitama</p>
+            <p>Chamber of Commerce</p>
+          </div>
+        </a>
+        <div class="nav-links" id="navLinks">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Directory</a></li>
+            <li><a href="trips.html">Join</a></li>
+            <li><a href="contact.html">Discover</a></li>
+          </ul>
+        </div>
+        <button id="menuToggle" aria-label="Toggle menu">☰</button>
+      </nav>
+    </section>
+  </header>
+
+  <main>
+   <!-- Hero Section -->
+    <section class="hero-text">
+      <img src="./images/hero_photo.jpeg" alt="cover-image" class="hero-image">
+      <div class="hero-btn">
+        <a href="" class="hero-btn">Keynote Tickets</a>
+      </div>
+    </section>
+
+    <!-- Body content -->
+    <section class="body">
+      <h1>Home</h1>
+      <div class="resources">
+        <h2 class="res-text">Event</h2>
+        <ul>
+          <li><a href="https://developer.mozilla.org/">Finance</a></li>
+          <li><a href="https://www.w3schools.com/">Support</a></li>
+          <li><a href="https://web.dev/">Tuition</a></li>
+        </ul>
+      </div>
+
+      <div class="course">
+        <h2 class="abj-text">Current Weather</h2>
+        <figure class="weather-box">
+          <img src="images/weather.png" alt="weather-photo">
+          <figcaption>
+            <p>
+              75°F<br>
+              Partly Cloudy<br>
+              High: 85°F<br>
+              Low: 52°F<br>
+              Humidity: 34%<br>
+              Sunrise: 7:30am<br>
+              Sunset: 9:45pm
+            </p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="course-a">
+        <h2 class="abj-text">Weather Forecast</h2>
+        <p class="double-space">
+          Today: <b>90<sup>0</sup>F</b><br>
+          Wednesday: <b>89<sup>0</sup>F</b><br>
+          Thursday: <b>68<sup>0</sup>F</b><br>
+        </p>
+      </div>
+    </section>
+
+    <!-- This toogle the views -->
+    <section id="view-toggle">
+        <button id="gridViewBtn">Grid View</button>
+        <button id="listViewBtn">List View</button>
+    </section>
+
+    <!-- This is member container section -->
+    <section id="members-container" class="grid-view">
+
+    
+
+    <!-- Placeholder for businesses -->
+    <div id="cards"></div>
+  </main>
+
+  <footer>
+    <p>Contact us: info@yourcitychamber.com | Phone: (555) 555-5555</p>
+    <p>© <span id="copyright-year"></span> Maitama Chamber of Commerce</p>
+    <p>Last modified: <span id="last-modified"></span></p>
+  </footer>
+  
+
+</body>
+</html>
