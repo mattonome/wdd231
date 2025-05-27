@@ -1,44 +1,92 @@
 [
     {
-      "name": "Alpha Consulting",
-      "address": "123 Main St, Your City",
-      "phone": "(555) 111-2222",
-      "website": "https://alphaconsulting.com",
-      "image": "alphaconsulting.png",
+      "name": "Zenith Bank Plc",
+      "address": "123 Main St, Maitama Abuja",
+      "phone": "<b>PHONE:</B>(234) 111-2222",
+      "website": "https://www.zenithbank.com/",
+      "image": "zenith.png",
       "membershipLevel": 3,
-      "description": "Expert business consulting services.",
-      "intro": "Alpha Consulting specializes in strategic business solutions for modern enterprises."
+      "description": "<b>Experience best banking experience.</b>",
+      "intro": "Recognized for innovation, superior performance and creation of premium value for all stakeholders."
     },
     {
-      "name": "Beta Bakery",
-      "address": "456 Baker St, Your City",
-      "phone": "<b>PHONE: </b>(555) 333-4444",
-      "website": "https://betabakery.com",
+      "name": "Mr Biggs ",
+      "address": "456 Baker St, Maitama, Abuja",
+      "phone": "<b>PHONE: </b>(234) 333-4444",
+      "website": "https://mrbiggs.com.ng/",
       "image": "betabakery.png",
       "membershipLevel": 2,
-      "description": "Fresh baked goods daily.",
-      "intro": "Beta Bakery brings the sweet smell of freshly baked delights to your neighborhood."
+      "description": "<b>Fresh baked goods daily.</b>",
+      "intro": "Mr Biggs is Nigeria’s pioneer QSR brand, renowned for its delicious meals and freshly baked pastries."
     },
     {
-      "name": "Gamma Tech",
-      "address": "789 Tech Ave, Innovation City",
-      "phone": "(555) 555-5555",
-      "website": "https://gammatech.com",
-      "image": "gammatech.png",
+      "name": "The Authority Newspaper",
+      "address": "789 Tech Ave, Maitama, Abuja",
+      "phone": "<b>PHONE: </b>(234) 237-4535",
+      "website": "https://authorityngr.com/",
+      "image": "authority.png",
       "membershipLevel": 1,
-      "description": "Cutting-edge technology solutions.",
-      "intro": "Gamma Tech pioneers the latest advancements in software development."
+      "description": "<b>Best news reporting.</b>",
+      "intro": "The Authority newspaper a well known Nigeria newspaper for quality news reporting."
+      
+    },
+    {
+      "name": "Transcope Hilton Hotel",
+      "address": "1 Aguiyi Ironsi Street Maitama, Abuja, 900001, Nigeria.",
+      "phone": "<b>PHONE: </b>(234) 657-4345",
+      "website": "https://www.hilton.com/",
+      "image": "hilton.png",
+      "membershipLevel": 1,
+      "description": "<b>Luxury at its peak.</b>",
+      "intro": "Our hotel sits at the heart of Nigeria's Federal Capital Territory and Abuja's commercial district."
+        
         
     },
     {
-      "name": "Gamma Tech",
-      "address": "789 Tech Ave, Innovation City",
-      "phone": "(555) 555-5555",
-      "website": "https://gammatech.com",
-      "image": "gammatech.png",
+      "name": "Nipco Oil and Gas Ltd.",
+      "address": "79 Tech Ave, Innovation City",
+      "phone": "<b>PHONE: </b>(234) 657-1111",
+      "website": "https://nipcoplc.com/",
+      "image": "nipco.png",
       "membershipLevel": 1,
-      "description": "Cutting-edge technology solutions.",
-      "intro": "Gamma Tech pioneers the latest advancements in software development."
+      "description": "<b>Partnership that fuels the nation</b>.",
+      "intro": "NIPCO Plc is well known for distribution of White Oil products, CNG and LPG in Nigeria."
+        
+        
+    },
+    {
+      "name": "MTN Nigeria",
+      "address": "789 Tech Ave, Innovation City",
+      "phone": "<b>PHONE: </b>(234) 444-4345",
+      "website": "https://www.mtn.ng/",
+      "image": "mtn.png",
+      "membershipLevel": 1,
+      "description": "<b>Every you go.</b>",
+      "intro": "MTN Nigeria offers best GSM services in the country. Our reach is unbeatable."
+        
+        
+    },
+    {
+      "name": "Abuja Electricity Distribution Company",
+      "address": "789 Tech Ave, Innovation City",
+      "phone": "<b>PHONE: </b>(234) 444-4345",
+      "website": "https://www.abujaelectricity.com/",
+      "image": "aedc.png",
+      "membershipLevel": 1,
+      "description": "<b>Redifining energy, improving lives and businesses with reliable electricity.</b>",
+      "intro": "Abuja Electricity Distribution PLC (AEDC) is a pivotal entity in Nigeria’s power sector."
+        
+        
+    },
+    {
+      "name": "Maitama General Hospital",
+      "address": "61 Aguiyi Ironsi St, Maitama 900271, Abuja, Nigeria",
+      "phone": "<b>PHONE: </b>(234) 802 087 1867",
+      "website": "https://www.maitamadh.com.ng/",
+      "image": "hospital.png",
+      "membershipLevel": 1,
+      "description": "<b>To be the apex of the healthcare delivery system in the Federal Capital Territory.</b>",
+      "intro": "To provide high quality, affordable and accessible comprehensive care service."
         
         
     }
