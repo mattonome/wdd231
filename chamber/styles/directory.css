@@ -463,8 +463,7 @@
     box-sizing: border-box;
     }
 
-    /* .course,
-    .course-a, */
+    
     .resources h2{
       text-align: center;
     }
@@ -517,9 +516,19 @@
     }
   
     .footer .social-icons {
+      display: flex;
       justify-content: center;
-    
+      gap: 10px; /* adjust this value as needed */
+      align-items: center;
     }
+    
+    .footer .social-icons a img {
+      width: 24px; /* adjust size as needed */
+      height: 24px;
+      margin: 0; /* remove default margins if any */
+      padding: 0;
+    }
+    
   
   
   
