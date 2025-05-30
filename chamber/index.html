@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="This is the Home Page for BYU Course tilttle WDD 231" />
+  <meta name="author" content="Akhabue Onome Matthew" />
+  <meta property="og:title" content="Facebook">
+  <meta property="og:description" content="Discover the other online activities with carryout which includes; advertisiment, campaigns, CSRs and advisory roles.">
+  <meta property="og:url" content="https://www.facebook.com/">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="https://www.apple.com/ac/structured-data/images/open_graph_logo.png?202110180743" />
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Apple">
+  <title>Course Home Page</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/chamber.css">
+  <script src="scripts/chamber.js" defer></script>
+  <script src="/scripts/weather.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <section class="header">
+      <nav>
+        <a href="#">
+          <img src="./images/ohio.png" alt="Logo">
+          <div class="maitama-1">
+            <p class="maitama">Maitama</p>
+            <p>Chamber of Commerce</p>
+          </div>
+        </a>
+      
+        <div class="nav-links" id="navLinks">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Directory</a></li>
+            <li><a href="trips.html">Join</a></li>
+            <li><a href="contact.html">Discover</a></li>
+          </ul>
+        </div>
+      
+        <button id="menuToggle" aria-label="Toggle menu">☰</button>
+      </nav>
+      
+    </section>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-text">
+      <img src="./images/hero_photo.jpeg" alt="cover-image" class="hero-image">
+      <div class="hero-btn">
+        <button>Keynote Tickets</button>
+      </div>
+    </section>
+    <h1>Home</h1>
+
+    <!-- This is current event section -->
+    <section class="facilities">
+        <h2>Upcoming Events</h2>
+        <P>The Chamber will be very busy this season being a peak business season in the country and continent at large. Here are some of our scheduled events. Don't miss out of any opportunity as we are always here to serve you.</P>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="images/trade_fair.jpeg" alt="trade_image">
+                <h3>2025 World Trade Exhibitions</h3>
+                <p>Trade exhibitions are organized events where businesses and industry professionals showcase their products, services, innovations, and capabilities to potential buyers, partners, and the public.</p>
+            </div>
+        
+            <div class="facilities-col">
+                <img src="images/auto-show.jpg" alt="auto_image">
+                <h3>Ever Engaging Auto Fair</h3>
+                <p>These fairs offer a platform for unveiling new car models, electric vehicles, concept designs, and cutting-edge automotive technology. Attendees can explore a wide range of vehicles and trucks</p>
+            </div>
+        
+            <div class="facilities-col">
+                <img src="images/aution.jpg" alt="autioning">
+                <h3>Autioning/Bidding</h3>
+                <p>Come and benefit from our transparency, fair pricing, and quick sales, generating excitement and urgency among buyers. Auctioning remains a powerful tool for maximizing value and efficiently transferring ownership.</p>
+            </div>
+        </div>
+        
+      </section>
+
+    <!-- For sale Section -->
+    <section class="body">
+      <div class="resources">
+        <h2 class="res-text">For Sale/Lease</h2>
+        <img src="images/for-sale.jpeg" alt="property-for-sale">
+        <ul>
+          <li><a href="https://developer.mozilla.org/">Contact Seller</a></li>
+          <li><a href="https://www.w3schools.com/">Make a Referral</a></li>
+          <li><a href="https://web.dev/">Share on Social Media</a></li>
+        </ul>
+      </div>
+    
+      <div class="course">
+        <h2 class="abj-text">Current Weather</h2>
+        <div class="card">
+          <h2 id="town"></h2>
+          <img id="graphic" src="https://openweathermap.org/img/wn/10n@2x.png" alt="moderate rain">
+          <p id="description">moderate rain</p>
+          <p id="temperature">38.75℃</p>
+        </div>
+      </div>
+    
+      <!-- course-a moved outside of course -->
+      <div class="course-a">
+        <h2 class="abj-text">Weather Forecast</h2>
+        <p class="double-space">
+          Today: <b>90<sup>0</sup>F</b><br>
+          Wednesday: <b>89<sup>0</sup>F</b><br>
+          Thursday: <b>68<sup>0</sup>F</b><br>
+        </p>
+      </div>
+    </section>
+    
+
+    <!-- Toggle the views -->
+    <section id="view-toggle">
+      <button id="gridViewBtn">Grid View</button>
+      <button id="listViewBtn">List View</button>
+    </section>
+
+    <!-- Member container section -->
+    <section id="members-container" class="grid-view">
+      <!-- Placeholder for businesses -->
+      <div id="cards"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <p class="address"><b>Maitama Chamber of Commerce</b><br> 
+        10 Oguda Close<br>
+        Off Lake Chad Crescent<br>
+        Maitama, Abuja<br>
+        <b>Email:</b> Info@maitamachamberofcommerce.org
+      </p>
+    </div>
+  
+    <div class="social-icons">
+      <a href="https://web.facebook.com/?_rdc=1&_rdr#"><img src="./images/facebook.svg" alt="Facebook"></a>
+      <a href="https://x.com/home"><img src="./images/twitter.svg" alt="Twitter"></a>
+      <a href="https://www.instagram.com/"><img src="./images/intagram.svg" alt="Instagram"></a>
+      <a href="https://www.youtube.com/"><img src="./images/youtube.svg" alt="YouTube"></a>
+    </div>
+  
+    <div class="copy-right">
+      <p>Contact us: info@yourcitychamber.com | Phone: (555) 555-5555</p>
+      <p>© <span id="copyright-year"></span> Maitama Chamber of Commerce</p>
+      <p>Last modified: <span id="last-modified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>
