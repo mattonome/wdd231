@@ -166,6 +166,11 @@
   ::backdrop{
     background-color: #0275d8;
   }
+
+
+
+
+  
   
   /* For larger screens, show form and cards side-by-side */
   @media (min-width: 768px) {
@@ -413,6 +418,7 @@
       flex-direction: column;
       align-items: flex-start;
       padding: 1rem;
+      display: flex;
     }
   
     nav img {
@@ -456,10 +462,18 @@
       width: 100%;
       height: auto;
     }
+
+    h1{
+        margin-left: 11%;
+    }
   
     .hero-text {
       margin: 10px;
       font-size: 1rem;
+    }
+
+    .hero-text img{
+        width: 96%;
     }
   
     .hero-text .hero-btn {
@@ -479,71 +493,7 @@
     }
 
   
-    .weather-box {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-  
-    .weather-box img {
-      width: 80px;
-    }
-  
-    .course,
-    .course-a,
-    .resources {
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 1rem !important;
-    box-sizing: border-box;
-    }
-
     
-    .resources h2{
-      text-align: center;
-    }
-
-    .course h2{
-      text-align: center;
-    }
-
-    .course-a h2{
-      text-align: center;
-    }
-
-    .course p,
-    .course-a p {
-    font-size: 1rem;
-    padding: 0.5rem;
-    }
-
-
-    .resources ul {
-      padding: 1rem;
-    }
-  
-  
-    .text2 {
-      font-size: 16px;
-      padding: 0.5rem;
-    }
-  
-    .member-card {
-      padding: 0.5rem;
-    }
-  
-    #members-container.grid-view {
-      grid-template-columns: 1fr;
-    }
-  
-    .member-image {
-      max-width: 100%;
-      margin: 10px auto;
-    }
-  
-    .member-divider {
-      margin: 10px 0;
-    }
   
     .footer {
       grid-template-columns: 1fr;
@@ -564,8 +514,6 @@
       padding: 0;
     }
     
-  
-  
   
   
     nav ul {
