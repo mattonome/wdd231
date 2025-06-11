@@ -42,7 +42,8 @@ document.addEventListener("DOMContentLoaded", () => {
         <p>${member.address}</p>
         <p>${member.phone}</p>
         <p><a href="${member.website}" target="_blank" rel="noopener">Visit Website</a></p>
-        <p>Membership Level: ${membershipLevelName(member.membershipLevel)}</p>
+        <p>Membership Level: ${membershipLevelName(Number(member.membershipLevel))}</p>
+
         <p>${member.description}</p>
       `;
 

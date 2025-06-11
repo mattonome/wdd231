@@ -142,6 +142,7 @@
   h1{
     margin-left: 3%;
   }
+
   
   
   /* .body h1 {
@@ -166,9 +167,21 @@
     padding: 1rem;
   }
 
+  main .thanks{
+    margin-left: 4%;
+    margin-bottom: 1%;
+    
+  }
+
+  main p{
+    font-size: 24px;
+    margin-bottom: 5%;
+  }
+
   ::backdrop{
     background-color: #0275d8;
   }
+  
 
 
 

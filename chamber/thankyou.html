@@ -1,31 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="This is the Thank You Page for Maitama Chamber of Commerce website, where new members are appreciated and thanked for signing up" />
+  <meta name="author" content="Akhabue Onome Matthew" />
+  <meta property="og:title" content="Maitama Chamber of Commerce">
+  <meta property="og:description" content="Discover the other online activities we carryout at Maitama Chamber of Commerce which includes; advertisement, campaigns, CSRs and advisory roles.">
+  <meta property="og:url" content="https://mattonome.github.io/wdd231/chamber/index.html">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="https://mattonome.github.io/wdd231/chamber/images/ohio.png" />
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Maitama Chamber of Commerce">
   <title>Thank You | Maitama Chamber of Commerce</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/join.css" />
+  <script src="scripts/join.js" defer></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
 </head>
+
 <body>
   <header>
-    <!-- Site header and nav -->
+    <section class="header">
+      <nav>
+        <img src="./images/ohio.png" alt="Logo">
+        <a href="#"></a>
+        <div class="maitama-1">
+            <p class="maitama">Maitama</p>
+            <p>Chamber of Commerce</p>
+        </div>
+      
+        <div class="nav-links" id="navLinks">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+          </ul>
+        </div>
+      
+        <button id="menuToggle" aria-label="Toggle menu">☰</button>
+      </nav>
+      
+    </section>
   </header>
 
   <main>
-    <h1>Thank You for Joining!</h1>
-    <p>Here is a summary of your submission:</p>
+    <!-- Hero Section -->
+    <!-- <section class="hero-text">
+      <img src="/images/handshake-photo.jpeg" alt="cover-image" class="hero-image"> -->
+      <!-- <div class="hero-btn">
+        <button>Keynote Tickets</button>
+      </div> -->
+    <!-- </section> -->
+         <img src="./images/handshake-photo.jpeg" alt="cover-image" class="hero-image">
 
-    <ul>
-      <li><strong>First Name:</strong> <span id="out-firstname"></span></li>
-      <li><strong>Last Name:</strong> <span id="out-lastname"></span></li>
-      <li><strong>Email:</strong> <span id="out-email"></span></li>
-      <li><strong>Phone:</strong> <span id="out-phone"></span></li>
-      <li><strong>Organization:</strong> <span id="out-organization"></span></li>
-      <li><strong>Submitted On:</strong> <span id="out-timestamp"></span></li>
-    </ul>
+    <h1>Thank You for Joining!</h1>
+    <div class="thanks">
+      <p>Here is a summary of your submission:</p>
+      
+
+
+      <ul>
+        <li><strong>First Name:</strong> <span id="out-firstname"></span></li>
+        <li><strong>Last Name:</strong> <span id="out-lastname"></span></li>
+        <li><strong>Email:</strong> <span id="out-email"></span></li>
+        <li><strong>Phone:</strong> <span id="out-phone"></span></li>
+        <li><strong>Organization:</strong> <span id="out-organization"></span></li>
+        <li><strong>Submitted On:</strong> <span id="out-timestamp"></span></li>
+      </ul>
+    </div>
   </main>
 
-  <footer>
-    <!-- Common footer -->
+  <footer class="footer">
+    <script>
+        // Set current timestamp in hidden input
+        document.getElementById('timestamp').value = new Date().toISOString();
+    </script>
+
+    <div>
+      <p class="address"><b>Maitama Chamber of Commerce</b><br> 
+        10 Oguda Close<br>
+        Off Lake Chad Crescent<br>
+        Maitama, Abuja<br>
+        <b>Email:</b> Info@maitamachamberofcommerce.org
+      </p>
+    </div>
+  
+    <div class="social-icons">
+      <a href="https://web.facebook.com/?_rdc=1&_rdr#"><img src="./images/facebook.svg" alt="Facebook"></a>
+      <a href="https://x.com/home"><img src="./images/twitter.svg" alt="Twitter"></a>
+      <a href="https://www.instagram.com/"><img src="./images/intagram.svg" alt="Instagram"></a>
+      <a href="https://www.youtube.com/"><img src="./images/youtube.svg" alt="YouTube"></a>
+    </div>
+  
+    <div class="copy-right">
+      <p>Contact us: info@yourcitychamber.com | Phone: (555) 555-5555</p>
+      <p>© <span id="copyright-year"></span> Maitama Chamber of Commerce</p>
+      <p>Last modified: <span id="last-modified"></span></p>
+    </div>
   </footer>
 
   <script>
