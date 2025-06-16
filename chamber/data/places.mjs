@@ -3,7 +3,7 @@ export const attractions = [
     name: "Aso Rock",
     address: "Three Arms Zone, Abuja, Nigeria",
     description: "A prominent natural rock formation and iconic landmark in Abuja offering scenic views and hiking trails.",
-    photo_url: "/images/aso-rock.webp"
+    photo_url: "images/aso-rock.webp"
   },
   {
     name: "Millennium Park",
