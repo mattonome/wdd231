@@ -12,7 +12,7 @@ function loadAttractions() {
     card.className = "card";
     card.innerHTML = `
       <h2>${place.name}</h2>
-      <figure><img src="${place.photo_url}" alt="${place.name}"></figure>
+      <figure><img src="${place.photo_url}" alt="${place.name}loading="lazy" width="300" height="200"></figure>
       <address>${place.address}</address>
       <p>${place.description}</p>
       <button>Learn more</button>
