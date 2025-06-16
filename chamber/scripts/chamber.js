@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
       navLinks.classList.toggle("show");
       toggleBtn.textContent = navLinks.classList.contains("show") ? "X" : "☰";
     });
-    
   }
 
   // === Directory Logic ===
@@ -35,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
       card.classList.add('member-card');
 
       card.innerHTML = `
-        <img src="../images/${member.image}" alt="Logo of ${member.name}" class="member-image">
+        <img src="../images/${member.image}" alt="Logo of ${member.name}" class="member-image" loading="lazy" width="300" height="200">
         <h3>${member.name}</h3>
         <p>${member.intro || ''}</p>
         <hr class="member-divider">
@@ -43,7 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
         <p>${member.phone}</p>
         <p><a href="${member.website}" target="_blank" rel="noopener">Visit Website</a></p>
         <p>Membership Level: ${membershipLevelName(Number(member.membershipLevel))}</p>
-
         <p>${member.description}</p>
       `;
 
@@ -52,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function membershipLevelName(level) {
-    switch(level) {
+    switch (level) {
       case 1: return "Member";
       case 2: return "Silver";
       case 3: return "Gold";
@@ -60,7 +58,20 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Toggle views
+  // === Wayfinder Function ===
+  function highlightCurrentPage() {
+    const currentPath = window.location.pathname.split("/").pop();
+    const navLinks = document.querySelectorAll("nav ul li a");
+
+    navLinks.forEach(link => {
+      const linkPath = link.getAttribute("href");
+      if (linkPath === currentPath) {
+        link.classList.add("active");
+      }
+    });
+  }
+
+  // === View Toggle Buttons ===
   gridViewBtn?.addEventListener('click', () => {
     membersContainer.classList.add('grid-view');
     membersContainer.classList.remove('list-view');
@@ -71,10 +82,11 @@ document.addEventListener("DOMContentLoaded", () => {
     membersContainer.classList.remove('grid-view');
   });
 
-  // Footer dates
+  // === Footer Dates ===
   document.getElementById('copyright-year').textContent = new Date().getFullYear();
   document.getElementById('last-modified').textContent = new Date(document.lastModified).toLocaleDateString();
 
-  // Initial load
+  // === Initial Load Calls ===
   loadMembers();
+  highlightCurrentPage(); // ✅ Call the wayfinder
 });

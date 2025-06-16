@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
       navLinks.classList.toggle("show");
       toggleBtn.textContent = navLinks.classList.contains("show") ? "X" : "☰";
     });
-    
   }
 
   // === Directory Logic ===
@@ -16,18 +15,20 @@ document.addEventListener("DOMContentLoaded", () => {
   const gridViewBtn = document.getElementById('gridViewBtn');
   const listViewBtn = document.getElementById('listViewBtn');
 
-  // Fetch and display members
   async function loadMembers() {
     try {
       const response = await fetch('data/members.json');
       const members = await response.json();
       displayMembers(members);
     } catch (error) {
-      membersContainer.innerHTML = '<p>Error loading members data.</p>';
+      if (membersContainer) {
+        membersContainer.innerHTML = '<p>Error loading members data.</p>';
+      }
     }
   }
 
   function displayMembers(members) {
+    if (!membersContainer) return;
     membersContainer.innerHTML = '';
 
     members.forEach(member => {
@@ -51,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function membershipLevelName(level) {
-    switch(level) {
+    switch (Number(level)) {
       case 1: return "Member";
       case 2: return "Silver";
       case 3: return "Gold";
@@ -59,21 +60,38 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Toggle views
+  // === Wayfinder Function ===
+  function highlightCurrentPage() {
+    const currentPath = window.location.pathname.split("/").pop();
+    const navLinks = document.querySelectorAll("nav ul li a");
+
+    navLinks.forEach(link => {
+      const linkPath = link.getAttribute("href");
+      if (linkPath === currentPath) {
+        link.classList.add("active");
+      }
+    });
+  }
+
+  // === View Toggle Buttons ===
   gridViewBtn?.addEventListener('click', () => {
-    membersContainer.classList.add('grid-view');
-    membersContainer.classList.remove('list-view');
+    membersContainer?.classList.add('grid-view');
+    membersContainer?.classList.remove('list-view');
   });
 
   listViewBtn?.addEventListener('click', () => {
-    membersContainer.classList.add('list-view');
-    membersContainer.classList.remove('grid-view');
+    membersContainer?.classList.add('list-view');
+    membersContainer?.classList.remove('grid-view');
   });
 
-  // Footer dates
-  document.getElementById('copyright-year').textContent = new Date().getFullYear();
-  document.getElementById('last-modified').textContent = new Date(document.lastModified).toLocaleDateString();
+  // === Footer Info ===
+  const copyright = document.getElementById('copyright-year');
+  const lastMod = document.getElementById('last-modified');
 
-  // Initial load
+  if (copyright) copyright.textContent = new Date().getFullYear();
+  if (lastMod) lastMod.textContent = new Date(document.lastModified).toLocaleDateString();
+
+  // === INITIAL LOAD ===
   loadMembers();
+  highlightCurrentPage(); // 👈 This ensures the current page nav link is highlighted
 });

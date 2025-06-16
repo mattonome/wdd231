@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   updateFooterDates();
   setupMenuToggle();
   setupModals();
+  highlightCurrentPage(); // 👈 Call the wayfinder here
 });
 
 function loadAttractions() {
@@ -55,6 +56,19 @@ function updateFooterDates() {
   if (modifiedEl) {
     modifiedEl.textContent = new Date(document.lastModified).toLocaleDateString();
   }
+}
+
+// === Wayfinder Function ===
+function highlightCurrentPage() {
+  const currentPath = window.location.pathname.split("/").pop();
+  const navLinks = document.querySelectorAll("nav ul li a");
+
+  navLinks.forEach(link => {
+    const linkPath = link.getAttribute("href");
+    if (linkPath === currentPath) {
+      link.classList.add("active");
+    }
+  });
 }
 
 function setupMenuToggle() {

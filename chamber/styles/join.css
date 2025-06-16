@@ -98,6 +98,13 @@
   border-radius: 5px;
 }
 
+
+nav ul li a.active {
+  color: #fff;
+  background-color: #6a1b9a; /* purple tone or your theme color */
+  border-radius: 5px;
+  padding: 0.25rem 0.5rem;
+}
   
   .hero-text {
     width: 100%;
