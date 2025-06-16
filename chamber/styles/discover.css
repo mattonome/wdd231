@@ -1,0 +1,380 @@
+/* discover.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Color & font variables */
+  :root {
+    --primary-color: #505033;
+    --secondary-color: #264969;
+    --accent1-color: #CFCFB4;
+    --accent2-color: #B4CDE4;
+    --heading-font: Georgia, serif;
+    --body-font: "Roboto", sans-serif;
+  }
+  
+  /* Body and headings */
+  body {
+    font-family: var(--body-font);
+    background-color: #ffffff;
+    color: #333;
+  }
+  
+  h1, h2 {
+    color: var(--primary-color);
+  }
+  
+  /* Header styles */
+  .header {
+    min-height: 1vh;
+    width: 100%;
+    background-image: linear-gradient(var(--secondary-color), var(--secondary-color));
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  
+  nav {
+    display: flex;
+    padding: 2% 5%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-family: var(--body-font);
+    font-size: 20px;
+  }
+  
+  nav img {
+    width: 17%;
+    height: auto;
+    object-fit: cover;
+    margin-left: 0;
+  }
+  
+  nav p {
+    color: white;
+  }
+  
+  nav .maitama {
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  nav .maitama-1 {
+    display: inline-block;
+  }
+  
+  .nav-links {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+  }
+  
+ 
+   /* Navigation hover effect */
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Tahoma;
+  margin-right: 2px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+  background-color: var(--accent2-color);
+  color: var(--secondary-color);
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+  
+  
+  h1{
+    margin-left: 2%;
+  }
+
+  p{
+    margin-left: 2%;
+    margin-bottom: 40px;
+}
+
+
+.discover-grid {
+  display: grid;
+  grid-template-areas:
+    "visit-info"
+    "cards";
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.visit-info {
+  grid-area: visit-info;
+  background: #f0f0f0;
+  padding: 1rem;
+  border-left: 5px solid #026b8c;
+  border-bottom:5px solid #026b8c;
+  border-radius: 8px;
+  margin-left:25%;
+  margin-right:25%;
+  text-align: center;
+  animation: zoomIn 0.6s ease-out forwards;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+}
+
+
+/* card holder div */
+ .cards{
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  grid-template-columns: 1fr; /* Mobile default */
+  grid-template-areas: 
+  "name"
+  "photograph"
+  "description"
+  "location";
+}
+
+@media (min-width: 641px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr); /* Tablet */
+  }
+}
+
+@media (min-width: 1025px) {
+  .cards {
+    grid-template-columns: repeat(4, 1fr); /* Desktop - 4 columns */
+  }
+}
+
+
+.card {
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-radius: 8px;
+
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card button {
+  align-self: start;
+  background: #026b8c;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.card button:hover {
+  background: #02475e;
+}
+
+
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    background-color:var(--primary-color);
+    padding: 2rem;
+    color: white;
+  }
+  
+  .footer div {
+    padding: 1rem;
+  }
+  
+  .footer .social-icons a img {
+    width: 24px;
+    margin-right: 10px;
+    margin-left: 35px;
+  }
+  
+  
+  /* Hamburger toggle button */
+ #menuToggle {
+  display: none;
+    
+  }
+  
+  
+  /* Show menu when toggled open */
+  nav ul.open {
+    display: flex;
+    flex-direction: column;
+  } 
+   
+  
+  
+
+ 
+  
+  
+  
+
+  /* For smaller screen */
+  @media (max-width: 400px) {
+    .body,
+    .body1 {
+      display: block !important;
+      margin: 0;
+      padding: 1rem;
+    }
+  
+    html, body {
+      overflow-x: hidden;
+      font-size: 14px;
+    }
+    #menuToggle {
+      display: block; /* Show on small screens */
+      position: absolute;   
+      top: 0.5rem;           
+      right: 1rem;           
+      background: none;
+      border: none;
+      color: white;
+      font-size: 2rem;
+      cursor: pointer;
+      z-index: 10;           
+      padding: 10px;
+    }
+  
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1rem;
+    }
+  
+    nav img {
+      width: 100%;
+      max-width: 150px;
+      margin-bottom: 1rem;
+    }
+    .nav-links {
+      display: none;
+    }
+    
+    /* When .show is added, display them */
+    .nav-links.show {
+      display: block;
+    }
+
+    .nav-links {
+      transition: all 0.3s ease-in-out;
+    }
+    
+    .nav-links ul {
+      display: none;
+    }
+    
+    .nav-links.show ul {
+      display: block;
+    }
+    
+  
+    .nav-links ul {
+      padding-left: 0;
+      width: 100%;
+    }
+  
+    .nav-links ul li {
+      display: block;
+      padding-left: 220px;
+    }
+  
+
+  
+    section {
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+    }
+
+  
+  
+    .footer {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  
+    .footer .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 10px; /* adjust this value as needed */
+      align-items: center;
+    }
+    
+    .footer .social-icons a img {
+      width: 24px; /* adjust size as needed */
+      height: 24px;
+      margin: 0; /* remove default margins if any */
+      padding: 0;
+    }
+    
+  
+  
+  
+  
+    nav ul {
+      display: none;
+    }
+  }
+  
+  /* Separate media query for slightly larger screens (e.g., mobile landscape or small tablets) */
+  @media (max-width: 600px) {
+    .body,
+    .body1 {
+      display: block !important;
+      grid-template-columns: none !important;
+      margin: 0 !important;
+      padding: 1rem !important;
+    }
+  }
+  
+  /* hhhhhhhhhhhhhhhhhhhhhhhhhhhhh */
+@media (min-width: 641px) {
+  .discover-grid {
+    grid-template-areas:
+      "visit-info visit-info"
+      "cards cards";
+  }
+}
+
+@media (min-width: 1025px) {
+  .discover-grid {
+    grid-template-areas:
+      "visit-info cards";
+    grid-template-columns: 1fr 3fr;
+  }
+}
