@@ -3,6 +3,9 @@ import { attractions } from "../data/places.mjs";
 document.addEventListener("DOMContentLoaded", () => {
   loadAttractions();
   showVisitMessage();
+  updateFooterDates();
+  setupMenuToggle();
+  setupModals();
 });
 
 function loadAttractions() {
@@ -12,7 +15,9 @@ function loadAttractions() {
     card.className = "card";
     card.innerHTML = `
       <h2>${place.name}</h2>
-      <figure><img src="${place.photo_url}" alt="${place.name}loading="lazy" width="300" height="200"></figure>
+      <figure>
+        <img src="${place.photo_url}" alt="${place.name}" loading="lazy" width="300" height="200">
+      </figure>
       <address>${place.address}</address>
       <p>${place.description}</p>
       <button>Learn more</button>
@@ -26,40 +31,53 @@ function showVisitMessage() {
   const lastVisit = localStorage.getItem("lastVisit");
   const now = Date.now();
 
+  if (!messageEl) return;
+
   if (!lastVisit) {
     messageEl.textContent = "Welcome! Let us know if you have any questions.";
   } else {
     const daysPassed = Math.floor((now - lastVisit) / (1000 * 60 * 60 * 24));
-    if (daysPassed < 1) {
-      messageEl.textContent = "Back so soon! Awesome!";
-    } else {
-      messageEl.textContent = `You last visited ${daysPassed} day${daysPassed === 1 ? "" : "s"} ago.`;
-    }
+    messageEl.textContent = daysPassed < 1
+      ? "Back so soon! Awesome!"
+      : `You last visited ${daysPassed} day${daysPassed === 1 ? "" : "s"} ago.`;
   }
 
   localStorage.setItem("lastVisit", now);
 }
 
-// Menu toggle
-    const toggleBtn = document.getElementById("menuToggle");
-    const navLinks = document.getElementById("navLinks");
-  
-    if (toggleBtn && navLinks) {
-      toggleBtn.addEventListener("click", () => {
-        navLinks.classList.toggle("show"); // Use 'show' or 'active', but stay consistent
-        toggleBtn.textContent = navLinks.classList.contains("show") ? "X" : "☰";
-      });
-    }
-  
-    // Open modals
-    document.querySelectorAll('.membership-cards a').forEach(link => {
-      link.addEventListener('click', function (e) {
-        e.preventDefault();
-        const modalId = this.getAttribute('href');
-        const modal = document.querySelector(modalId);
-        if (modal) {
-          modal.style.display = 'block';
-        }
-      });
+function updateFooterDates() {
+  const yearEl = document.getElementById("copyright-year");
+  const modifiedEl = document.getElementById("last-modified");
+
+  if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
+  }
+  if (modifiedEl) {
+    modifiedEl.textContent = new Date(document.lastModified).toLocaleDateString();
+  }
+}
+
+function setupMenuToggle() {
+  const toggleBtn = document.getElementById("menuToggle");
+  const navLinks = document.getElementById("navLinks");
+
+  if (toggleBtn && navLinks) {
+    toggleBtn.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+      toggleBtn.textContent = navLinks.classList.contains("show") ? "X" : "☰";
     });
-  
+  }
+}
+
+function setupModals() {
+  document.querySelectorAll('.membership-cards a').forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      const modalId = this.getAttribute('href');
+      const modal = document.querySelector(modalId);
+      if (modal) {
+        modal.style.display = 'block';
+      }
+    });
+  });
+}
