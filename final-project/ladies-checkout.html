@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="This is the Home Page for Rehoboth's Hub website…" />
+  <meta name="author" content="Akhabue Onome Matthew" />
+  <title>Rehoboth's Hub</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/project.css">
+  <script type="module" src="scripts/project.js" defer></script>
+  <script type="module" src="scripts/ladies-checkout.js" defer></script>
+</head>
+<body>
+  <header>
+    <section class="header">
+      <nav>
+        <a href="#">
+          <img src="./images/rehoboth_logo.webp" alt="Logo">
+          <div class="maitama-1">
+            <p class="maitama">Rehoboth's Hub</p>
+          </div>
+        </a>
+        <div class="nav-links" id="navLinks">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ladies.html">Ladies</a></li>
+            <li><a href="men.html">Men</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <button id="menuToggle" aria-label="Toggle menu">☰</button>
+      </nav>
+    </section>
+  </header>
+
+  <main id="checkout-product">
+    <section id="checkout-card" class="checkout-card">
+      <h2 id="checkout-name"></h2>
+      <img id="checkout-image" src="" alt="" loading="lazy">
+      <p id="checkout-price" class="price"></p>
+      <p id="checkout-description"></p>
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" min="1" value="1">
+      <button id="confirmPurchase">Confirm Purchase</button>
+      <button id="goBack">← Back</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <p class="address">
+        <b>Maitama Chamber of Commerce</b><br>
+        10 Oguda Close<br>
+        Off Lake Chad Crescent<br>
+        Maitama, Abuja<br>
+        <b>Email:</b> Info@maitamachamberofcommerce.org
+      </p>
+    </div>
+    <div class="social-icons">
+      <a href="#"><img src="./images/facebook.svg" alt="Facebook"></a>
+      <a href="#"><img src="images/twitter.svg" alt="Twitter"></a>
+      <a href="#"><img src="images/intagram.svg" alt="Instagram"></a>
+      <a href="#"><img src="images/youtube.svg" alt="YouTube"></a>
+    </div>
+    <div class="copy-right">
+      <p>Contact us: info@yourcitychamber.com | Phone: (555) 555-5555</p>
+      <p>© <span id="copyright-year"></span> Maitama Chamber of Commerce</p>
+      <p>Last modified: <span id="last-modified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>

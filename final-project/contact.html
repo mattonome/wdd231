@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="This is the Home Page for Rehoboth's Hub website…" />
+  <meta name="author" content="Akhabue Onome Matthew" />
+  <title>Rehoboth's Hub</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/project.css">
+  <script type="module" src="scripts/project.js" defer></script>
+
+
+</head>
+<body>
+    <header>
+    <section class="header">
+      <nav>
+        <a href="#">
+          <img src="./images/rehoboth_logo.webp" alt="Logo">
+          <div class="maitama-1">
+            <p class="maitama">Rehoboth's Hub</p>
+          </div>
+        </a>
+        <div class="nav-links" id="navLinks">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ladies.html">Ladies</a></li>
+            <li><a href="men.html">Men</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <button id="menuToggle" aria-label="Toggle menu">☰</button>
+      </nav>
+    </section>
+  </header>
+
+    <!-- CONTENT HERE -->
+    <main>
+        <h1>We Want to Hear from You</h1>
+        <form method="get" action="thanks.html" class="wf1">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label>First Name*<input type="text" name="fname" required></label>
+                <label>Last Name*<input type="text" name="lname" required></label>
+                <label>Phone<input type="tel" name="phone" placeholder="123 444 444 44"></label>
+                <label>Email*<input type="email" name="email" placeholder="myemail@some.com" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Leave us a message</legend>
+                
+            </fieldset>
+
+
+            <input type="submit" value="My Message">
+
+        </form>
+            
+
+            
+            
+    </main>
+    
+    <footer class="footer">
+    <div>
+      <p class="address">
+        <b>Maitama Chamber of Commerce</b><br>
+        10 Oguda Close<br>
+        Off Lake Chad Crescent<br>
+        Maitama, Abuja<br>
+        <b>Email:</b> Info@maitamachamberofcommerce.org
+      </p>
+    </div>
+    <div class="social-icons">
+      <a href="#"><img src="./images/facebook.svg" alt="Facebook"></a>
+      <a href="#"><img src="images/twitter.svg" alt="Twitter"></a>
+      <a href="#"><img src="images/intagram.svg" alt="Instagram"></a>
+      <a href="#"><img src="images/youtube.svg" alt="YouTube"></a>
+    </div>
+    <div class="copy-right">
+      <p>Contact us: info@yourcitychamber.com | Phone: (555) 555-5555</p>
+      <p>© <span id="copyright-year"></span> Maitama Chamber of Commerce</p>
+      <p>Last modified: <span id="last-modified"></span></p>
+    </div>
+  </footer>
+    
+</body>
+</html>
