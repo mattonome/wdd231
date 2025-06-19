@@ -63,3 +63,28 @@ function setupMenuToggle() {
     });
   }
 }
+
+
+  document.querySelectorAll('.membership-cards a').forEach(link => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+    const modalId = this.getAttribute('href');
+    const modal = document.querySelector(modalId);
+    if (modal) {
+      modal.style.display = 'block';
+    }
+  });
+});
+
+// === Close Modals ===
+document.querySelectorAll('.modal a').forEach(closeLink => {
+  closeLink.addEventListener('click', function (e) {
+    e.preventDefault();
+    const modal = this.closest('.modal');
+    if (modal) {
+      modal.style.display = 'none';
+    }
+  });
+});
+
+
