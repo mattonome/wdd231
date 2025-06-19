@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="This is the Home Page for Rehoboth's Hub website…" />
+  <meta name="description" content="Rehoboth's Hub Checkout Page for Ladies Items" />
   <meta name="author" content="Akhabue Onome Matthew" />
-  <title>Rehoboth's Hub</title>
-  <link rel="icon" href="favicon.ico">
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/project.css">
-  <script type="module" src="scripts/project.js" defer></script>
+  <title>Rehoboth's Hub - Ladies Checkout</title>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/project.css" />
   <script type="module" src="scripts/ladies-checkout.js" defer></script>
 </head>
+
 <body>
   <header>
     <section class="header">
       <nav>
-        <a href="#">
-          <img src="./images/rehoboth_logo.webp" alt="Logo">
+        <a href="index.html">
+          <img src="./images/rehoboth_logo.webp" alt="Rehoboth's Logo" />
           <div class="maitama-1">
             <p class="maitama">Rehoboth's Hub</p>
           </div>
@@ -37,32 +37,36 @@
 
   <main id="checkout-product">
     <section id="checkout-card" class="checkout-card">
-      <h2 id="checkout-name"></h2>
-      <img id="checkout-image" src="" alt="" loading="lazy">
+      <h2 id="checkout-name">Loading...</h2>
+      <img id="checkout-image" src="" alt="" loading="lazy" />
       <p id="checkout-price" class="price"></p>
       <p id="checkout-description"></p>
+
       <label for="quantity">Quantity:</label>
-      <input type="number" id="quantity" name="quantity" min="1" value="1">
-      <button id="confirmPurchase">Confirm Purchase</button>
-      <button id="goBack">← Back</button>
+      <input type="number" id="quantity" name="quantity" min="1" value="1" />
+
+      <div class="checkout-buttons" style="margin-top: 1rem;">
+        <button id="confirmPurchase">Confirm Purchase</button>
+        <button id="goBack">← Back</button>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
     <div>
       <p class="address">
-        <b>Maitama Chamber of Commerce</b><br>
-        10 Oguda Close<br>
-        Off Lake Chad Crescent<br>
-        Maitama, Abuja<br>
-        <b>Email:</b> Info@maitamachamberofcommerce.org
+        <b>Maitama Chamber of Commerce</b><br />
+        10 Oguda Close<br />
+        Off Lake Chad Crescent<br />
+        Maitama, Abuja<br />
+        <b>Email:</b> info@maitamachamberofcommerce.org
       </p>
     </div>
     <div class="social-icons">
-      <a href="#"><img src="./images/facebook.svg" alt="Facebook"></a>
-      <a href="#"><img src="images/twitter.svg" alt="Twitter"></a>
-      <a href="#"><img src="images/intagram.svg" alt="Instagram"></a>
-      <a href="#"><img src="images/youtube.svg" alt="YouTube"></a>
+      <a href="#"><img src="./images/facebook.svg" alt="Facebook" /></a>
+      <a href="#"><img src="images/twitter.svg" alt="Twitter" /></a>
+      <a href="#"><img src="images/intagram.svg" alt="Instagram" /></a>
+      <a href="#"><img src="images/youtube.svg" alt="YouTube" /></a>
     </div>
     <div class="copy-right">
       <p>Contact us: info@yourcitychamber.com | Phone: (555) 555-5555</p>
@@ -70,5 +74,11 @@
       <p>Last modified: <span id="last-modified"></span></p>
     </div>
   </footer>
+
+  <script>
+    // Auto-update footer details
+    document.getElementById("copyright-year").textContent = new Date().getFullYear();
+    document.getElementById("last-modified").textContent = document.lastModified;
+  </script>
 </body>
 </html>

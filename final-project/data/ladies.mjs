@@ -1,58 +1,58 @@
 export const ladies = [
   {
-    id: 1,
-    name: "Kimono Jacket",
-    address: "N7200",
-    description: "Lightweight, stylish kimono jacket perfect for layering over casual outfits.",
-    photo_url: "images/kimono-jacket.webp"
+    id: 101,
+    name: "Coach Bag ",
+    address: "N15,000",
+    description: "Lightweight, stylish coach bag perfect for layering over casual outfits.",
+    photo_url: "images/coach-bag.webp"
   },
   {
-    id: 2,
-    name: "Pleated Skirt",
-    address: "N6800",
+    id: 102,
+    name: "Ankle Boot",
+    address: "N24,000",
     description: "Chic pleated skirt ideal for office wear or smart-casual outings.",
-    photo_url: "images/pleated-skirt.webp"
+    photo_url: "images/ankle-boot.webp"
   },
   {
-    id: 3,
+    id: 103,
     name: "Platform Sandals",
-    address: "N7900",
+    address: "N15,000",
     description: "Trendy platform sandals offering height and comfort for daily wear.",
     photo_url: "images/platform-sandals.webp"
   },
   {
-    id: 4,
-    name: "Bralette Top",
-    address: "N4500",
-    description: "Soft, minimal bralette top great for layering or summer outfits.",
-    photo_url: "images/bralette-top.webp"
+    id: 104,
+    name: "Harmes Stone",
+    address: "N8,500",
+    description: "Soft, Harmes great for layering or summer outfits.",
+    photo_url: "images/Harmes-stone.webp"
   },
   {
-    id: 5,
-    name: "Peplum Blouse",
-    address: "N8800",
-    description: "Elegant blouse with a peplum flare, perfect for formal and semi-formal looks.",
-    photo_url: "images/peplum-blouse.webp"
+    id: 105,
+    name: "Channel Leather",
+    address: "N8,800",
+    description: "Elegant bag, perfect for formal and semi-formal looks.",
+    photo_url: "images/channel-leather.webp"
   },
   {
-    id: 6,
-    name: "Mini Crossbody Bag",
-    address: "N5300",
-    description: "Compact crossbody bag ideal for essentials on the go.",
-    photo_url: "images/mini-crossbody-bag.webp"
+    id: 106,
+    name: "Chris Kalla Bag",
+    address: "N12,000",
+    description: "Compact Kalla bag ideal for essentials on the go.",
+    photo_url: "images/chris-kalla.webp"
   },
   {
-    id: 7,
-    name: "Off-Shoulder Dress",
+    id: 107,
+    name: "Dami Set",
     address: "N9900",
-    description: "Flattering off-shoulder dress perfect for evening dates or parties.",
-    photo_url: "images/off-shoulder-dress.webp"
+    description: "Lovely dress perfect for evening dates or parties.",
+    photo_url: "images/dami-set.webp"
   },
   {
-    id: 8,
-    name: "Ankle Boots",
+    id: 108,
+    name: "Sandals Boots",
     address: "N11500",
     description: "Classic ankle boots suitable for both casual and dressy occasions.",
-    photo_url: "images/ankle-bootss.webp"
+    photo_url: "images/sandal-booth1.webp"
   }
 ];
